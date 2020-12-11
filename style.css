@@ -4,17 +4,27 @@ body {
     align-items: center;
     overflow: auto;
     width: 100vw;
+    direction: rtl;
+    padding-bottom: 50px;
+    overflow-x: hidden;
 }
 
 * {
     margin: 0;
     padding: 0;
-    direction: rtl;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*:focus {
+    outline: 0;
 }
 
 h3 {
     margin: 30px 5px;
+}
+
+p{
+    margin: 0 5px 30px 5px;
 }
 
 table,
@@ -24,18 +34,37 @@ th {
     border-collapse: collapse;
     padding: 15px 15px;
     text-align: center;
-    border: 2px solid  rgba(0, 0, 0, 0.726);
-    transition: all 0.6s;
+    border: 1px solid rgb(61, 61, 61);
 }
 
-.item1,.item4{
-    background-color: rgba(173, 230, 178, 0.5);
+tbody {
+    direction: ltr;
 }
 
-.item2,.item5{
-    background-color: rgba(255, 182, 193, 0.5);
+select {
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #e1e1e1;
+    padding: 10px 15px;
+    margin: 5px 0 30px 0;
 }
 
-.item3,.item6{
-    background-color: rgba(146, 144, 238, 0.5);
+button{
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #e1e1e1;
+    padding: 10px 15px;
+    margin: 5px 0 30px 0;
+}
+
+tr:nth-child(odd){
+    background-color: #e1e1e191;
+}
+
+thead > tr{
+    background-color: #fff !important;
 }

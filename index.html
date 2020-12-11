@@ -5,17 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>api</title>
+    <title>قیمت زنده طلا، سکه، دلار و ارز</title>
 </head>
 
 <body>
-    <h3>نرخ لحظه به لحظه ارز</h3>
+    <h3>قیمت زنده طلا، سکه، دلار و ارز</h3>
+    <p>نکته: اگه api کار نمی کند لطفا به این <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino/related?hl=en" target="_blank">لینک</a> بروید و اکستنشن را دانلود کنید.</p>
+
+    <div>
+        <select id="mySelect">
+            <option value="#">انتخاب کنید</option>
+            <option value="18ayar">گرم طلای 18 عیار</option>
+            <option value="abshodeh">مثقال طلای آبشده</option>
+
+            <option class='line' value="#"></option>
+
+            <option value="sekkeh">سکه امامی</option>
+            <option value="bahar">سکه بهار آزادی</option>
+            <option value="nim">نیم سکه</option>
+            <option value="rob">ربع سکه</option>
+            <option value="gerami">سکه گرمی</option>
+
+            <option class='line' value="#"></option>
+
+            <option value="bub_sekkeh">حباب سکه امامی</option>
+            <option value="bub_bahar">حباب سکه بهار آزادی</option>
+            <option value="bub_nim">حباب نیم سکه</option>
+            <option value="bub_rob">حباب ربع سکه</option>
+            <option value="bub_gerami">حباب سکه گرمی</option>
+
+            <option class='line' value="#"></option>
+
+            <option value="usd_buy">دلار تهران خرید</option>
+            <option value="usd_sell">دلار تهران فروش</option>
+            <option value="aed_sell">درهم دوبی فروش</option>
+            <option value="eur">یورو</option>
+        </select>
+
+        <button onclick="location.reload()">به روز رسانی</button>
+    </div>
+
     <table>
         <thead>
             <tr>
-                <th>ردیف</th>
-                <th>نوع</th>
-                <th>قیمت (ریال)</th>
+                <th>نام</th>
+                <th>نماد</th>
+                <th>قیمت (تومان)</th>
+                <th>تغییر</th>
                 <th>تاریخ</th>
             </tr>
         </thead>
