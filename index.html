@@ -9,14 +9,12 @@
 </head>
 
 <body>
-    <h3>قیمت زنده طلا، سکه، دلار و ارز</h3>
-    <p>نکته: اگه api کار نمی کند لطفا به این <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino/related?hl=en" target="_blank">لینک</a> بروید و افزونه را نصب کنید.</p>
+    <h3>آخرین قیمت طلا، سکه، دلار و ارز</h3>
+    <p style="color: #b4b1b1;">نکته: اگه api کار نمی کند لطفا به این <a style="color: #666666;" href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino/related?hl=en" target="_blank">لینک</a> بروید و افزونه را نصب کنید.</p>
 
     <div>
         <select id="mySelect">
             <option value="#">انتخاب کنید</option>
-            <option value="18ayar">گرم طلای 18 عیار</option>
-            <option value="abshodeh">مثقال طلای آبشده</option>
             <option value="sekkeh">سکه امامی</option>
             <option value="bahar">سکه بهار آزادی</option>
             <option value="nim">نیم سکه</option>
@@ -27,6 +25,9 @@
             <option value="bub_nim">حباب نیم سکه</option>
             <option value="bub_rob">حباب ربع سکه</option>
             <option value="bub_gerami">حباب سکه گرمی</option>
+            <option value="abshodeh">مثقال طلای آبشده</option>
+            <option value="18ayar">گرم طلای 18 عیار</option>
+            
             <option value="usd_buy">دلار تهران خرید</option>
             <option value="usd_sell">دلار تهران فروش</option>
             <option value="aed_sell">درهم دوبی فروش</option>
@@ -36,6 +37,16 @@
             <option value="jpy">ین ژاپن</option>
             <option value="krw">وون کره</option>
             <option value="try">لیر ترکیه</option>
+
+            <option value="btc">بیت کوین</option>
+            <option value="dash">دش</option>
+            <option value="eos">ایاس</option>
+            <option value="eth">اتریوم</option>
+            <option value="ltc">لایت کوین</option>
+            <option value="usdt">تتر دلار</option>
+            <option value="usd">بیت کش</option>
+            <option value="bnb">بایننس</option>
+
         </select>
 
         <button onclick="location.reload()">به روز رسانی</button>
