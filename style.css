@@ -1,3 +1,7 @@
+@font-face{
+    src: url('IRANSansWeb\(FaNum\).ttf');
+    font-family: 'iransans';
+}
 body {
     display: flex;
     flex-direction: column;
@@ -12,7 +16,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'iransans';
 }
 
 *:focus {
@@ -44,9 +48,9 @@ tbody {
 select {
     cursor: pointer;
     background-color: #fff;
-    border: 2px solid #e1e1e1;
+    border: 1px solid #e1e1e1;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px #e1e1e1;
+    box-shadow: 1px 1px 1px #4444;
     padding: 10px 15px;
     margin: 5px 0 30px 0;
 }
@@ -54,9 +58,9 @@ select {
 button{
     cursor: pointer;
     background-color: #fff;
-    border: 2px solid #e1e1e1;
+    border: 1px solid #e1e1e1;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px #e1e1e1;
+    box-shadow: 1px 1px 1px #4444;
     padding: 10px 15px;
     margin: 5px 0 30px 0;
 }
